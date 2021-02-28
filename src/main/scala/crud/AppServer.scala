@@ -9,7 +9,7 @@ import akka.stream.ActorMaterializer
 import scala.concurrent.ExecutionContextExecutor
 import scala.io.StdIn
 
-object WebServer extends App {
+object AppServer extends App {
   implicit val system: ActorSystem = ActorSystem("web-app")
   private implicit val dispatcher: ExecutionContextExecutor = system.dispatcher
   private implicit val materialize: ActorMaterializer = ActorMaterializer()
